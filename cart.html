@@ -2,25 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
 </head>
 <body>
 
-<h1>Your Cart</h1>
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Your shopping cart</p>
+</header>
 
-<ul>
-  <li>
-    <p>Product: Headphone</p>
-    <p>Price: 10</p>
-    <p>Quantity: 1</p>
-  </li>
-</ul>
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+</nav>
 
-<p>Subtotal: 10</p>
+<main>
+  <h1>Your Cart</h1>
 
-<a href="checkout.html">Proceed to Checkout</a><br><br>
+  <div class="cart-container">
+    <div class="cart-item">
+      <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/80'">
+      <div class="cart-item-details">
+        <h3>T-Shirt</h3>
+        <p class="price">250</p>
+      </div>
+      <div class="cart-quantity">
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1" max="99">
+      </div>
+      <button class="remove-btn">Remove</button>
+    </div>
 
-<a href="products.html">Back to Products</a>
+    <div class="cart-item">
+      <img src="watch.png" alt="Watch" onerror="this.src='https://via.placeholder.com/80'">
+      <div class="cart-item-details">
+        <h3>Watch</h3>
+        <p class="price">779</p>
+      </div>
+      <div class="cart-quantity">
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1" max="99">
+      </div>
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="empty-cart-message">
+    <p>🛒 Your cart is currently empty</p>
+    <a href="products.html" class="btn">Continue Shopping</a>
+  </div>
+
+  <div class="order-summary">
+    <h3>Order Summary</h3>
+    <p>Subtotal: <span class="price">1029</span></p>
+    <p>Shipping: ₱50</p>
+    <hr>
+    <p><strong>Total: <span class="price">1079</span></strong></p>
+    <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

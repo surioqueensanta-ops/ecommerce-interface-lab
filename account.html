@@ -2,36 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
 </head>
 <body>
 
-<h1>My Account</h1>
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Welcome back, John!</p>
+</header>
 
-<p>Welcome, User</p>
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Logout</a>
+</nav>
 
-<h2>Account Options</h2>
-<ul>
-  <li>Order History</li>
-  <li>Profile Settings</li>
-  <li>Wishlist</li>
-</ul>
+<main>
+  <h1>My Account</h1>
+  <p>Welcome, <strong>Surio</strong></p>
 
-<h2>Previous Purchases</h2>
+  <nav style="margin-bottom: 20px;">
+    <a href="#">Order History</a>
+    <a href="#">Profile Settings</a>
+    <a href="#">Wishlist</a>
+    <a href="#">Saved Addresses</a>
+  </nav>
 
-<details>
-  <summary>Order #1</summary>
-  <p>Product: T-Shirt</p>
-  <p>Price: 150</p>
-</details>
+  <section>
+    <h2>📋 Previous Purchases</h2>
+    
+    <ul class="order-list">
+      <li>
+        <details>
+          <summary>Order #ORD-001 - ₱250 - Dec 15, 2024</summary>
+          <p><strong>Items:</strong></p>
+          <ul>
+            <li>T-Shirt x1 - ₱250</li>
+          </ul>
+          <p><strong>Status:</strong> Delivered</p>
+          <p><strong>Tracking:</strong> TRK123456789</p>
+        </details>
+      </li>
+      
+      <li>
+        <details>
+          <summary>Order #ORD-002 - ₱779 - Dec 20, 2024</summary>
+          <p><strong>Items:</strong></p>
+          <ul>
+            <li>Watch x1 - ₱779</li>
+          </ul>
+          <p><strong>Status:</strong> Shipped</p>
+          <p><strong>Tracking:</strong> TRK987654321</p>
+        </details>
+      </li>
+    </ul>
+  </section>
+</main>
 
-<details>
-  <summary>Order #2</summary>
-  <p>Product: Pants</p>
-  <p>Price: 300</p>
-</details>
-
-<a href="landing.html">Back to Home</a>
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

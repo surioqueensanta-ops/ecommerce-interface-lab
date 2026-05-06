@@ -2,54 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products | Surio Store</title>
+  <link rel="stylesheet" href="surio.css">
 </head>
 <body>
 
-<h1>My Store</h1>
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Browse our collection</p>
+</header>
 
-<p>
-  <a href="landing.html">Home</a> |
-  <a href="cart.html">Cart</a> |
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
   <a href="account.html">Account</a>
-</p>
+</nav>
 
-<h2>Products</h2>
+<main style="display: flex; flex-wrap: wrap;">
+  <aside style="width: 250px;">
+    <h3>🔍 Filter Products</h3>
+    <form>
+      <h4>Category</h4>
+      <label><input type="checkbox"> Electronics</label>
+      <label><input type="checkbox"> Clothing</label>
+      <label><input type="checkbox"> Accessories</label>
+      <label><input type="checkbox"> Footwear</label>
+      
+      <h4>Price Range</h4>
+      <label><input type="radio" name="price"> Under ₱500</label>
+      <label><input type="radio" name="price"> ₱500 - ₱1000</label>
+      <label><input type="radio" name="price"> Over ₱1000</label>
+    </form>
+  </aside>
 
-<article>
-  <img src="mouse.png" alt="Mouse" width="150">
-  <h3>Mouse</h3>
-  <p>Price: 229</p>
-  <a href="detail-mouse.html">View Details</a>
-</article>
+  <div style="flex: 1;">
+    <h1>All Products <span style="font-size: 0.9rem;">(8 items)</span></h1>
+    <div class="products-grid">
+      
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Wireless Mouse</h3>
+        <p>Ergonomic wireless mouse</p>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View Details</a>
+      </article>
 
-<article>
-  <img src="watch.png" alt="Watch" width="150">
-  <h3>Watch</h3>
-  <p>Price: 779</p>
-  <a href="detail-watch.html">View Details</a>
-</article>
+      <article class="product-card">
+        <img src="watch.png" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Smart Watch</h3>
+        <p>Stylish stainless steel</p>
+        <p class="price">779</p>
+        <a href="detail-watch.html" class="btn-small">View Details</a>
+      </article>
 
-<article>
-  <img src="tshirt.png" alt="T-Shirt" width="150">
-  <h3>T-Shirt</h3>
-  <p>Price: 250</p>
-  <a href="detail-tshirt.html">View Details</a>
-</article>
+      <article class="product-card">
+        <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>T-Shirt</h3>
+        <p>100% premium cotton</p>
+        <p class="price">250</p>
+        <a href="detail-tshirt.html" class="btn-small">View Details</a>
+      </article>
 
-<article>
-  <img src="jeans.png" alt="Pants" width="150">
-  <h3>Pants</h3>
-  <p>Price: 300</p>
-  <a href="detail-pants.html">View Details</a>
-</article>
+      <article class="product-card">
+        <img src="jeans.png" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Denim Pants</h3>
+        <p>Classic denim jeans</p>
+        <p class="price">300</p>
+        <a href="detail-pants.html" class="btn-small">View Details</a>
+      </article>
 
-<article>
-  <img src="shoes.png" alt="Shoes" width="150">
-  <h3>Shoes</h3>
-  <p>Price: 850</p>
-  <a href="detail-shoes.html">View Details</a>
-</article>
+      <article class="product-card">
+        <img src="shoes.png" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Sports Shoes</h3>
+        <p>Comfortable sports shoes</p>
+        <p class="price">850</p>
+        <a href="detail-shoes.html" class="btn-small">View Details</a>
+      </article>
+
+      <article class="product-card">
+        <img src="charger.png" alt="Charger" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Fast Charger</h3>
+        <p>USB-C fast charging brick</p>
+        <p class="price">299</p>
+        <a href="detail-charger.html" class="btn-small">View Details</a>
+      </article>
+
+      <article class="product-card">
+        <img src="socks.png" alt="Socks" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Cotton Socks</h3>
+        <p>Comfortable everyday socks</p>
+        <p class="price">99</p>
+        <a href="detail-socks.html" class="btn-small">View Details</a>
+      </article>
+
+      <article class="product-card">
+        <img src="powerbank.png" alt="Powerbank" onerror="this.src='https://via.placeholder.com/200'">
+        <h3>Powerbank</h3>
+        <p>10000mAh portable charger</p>
+        <p class="price">599</p>
+        <a href="detail-powerbank.html" class="btn-small">View Details</a>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Surio Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

@@ -2,45 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Watch Detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch | Product Details - Surio Store</title>
+  <link rel="stylesheet" href="surio.css">
 </head>
 <body>
 
-<h1>Watch</h1>
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
 
-<p>Price: 779</p>
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+</nav>
 
-<img src="watch.png" alt="Watch" width="200">
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="watch.png" alt="Elegant Watch" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Elegant Watch</h1>
+      <p class="price">779</p>
+      <p class="description">Stylish stainless steel watch with premium build quality. Water resistant and perfect for daily wear.</p>
+      
+      <h3>Technical Specifications</h3>
+      <table class="product-specs">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Color</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td>Material</td>
+            <td>Stainless Steel</td>
+          </tr>
+          <tr>
+            <td>Water Resistant</td>
+            <td>Yes (50m)</td>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td>Analog</td>
+          </tr>
+          <tr>
+            <td>Band Material</td>
+            <td>Genuine Leather</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form action="cart.html" method="get" class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <input type="hidden" name="product" value="Watch">
+        <input type="hidden" name="price" value="779">
+        <button type="submit">🛒 Add to Cart</button>
+      </form>
+    </div>
+  </section>
 
-<table border="1">
-  <tr>
-    <th>Feature</th>
-    <th>Value</th>
-  </tr>
-  <tr>
-    <td>Color</td>
-    <td>Black</td>
-  </tr>
-  <tr>
-    <td>Material</td>
-    <td>Stainless Steel</td>
-  </tr>
-  <tr>
-    <td>Water Resistant</td>
-    <td>Yes</td>
-  </tr>
-</table>
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Stylish and durable! Perfect for both casual and formal occasions."
+      </blockquote>
+      <p class="review-author">- David L. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 18, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Great quality watch at an affordable price. The leather band is comfortable."
+      </blockquote>
+      <p class="review-author">- Anna K. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 12, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Water resistant feature works great. Highly recommend this watch!"
+      </blockquote>
+      <p class="review-author">- Robert C. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 8, 2024</p>
+    </article>
+  </section>
 
-<form>
-  <label>Quantity:</label>
-  <input type="number" value="1">
-  <button>Add to Cart</button>
-</form>
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Mouse</h3>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>T-Shirt</h3>
+        <p class="price">250</p>
+        <a href="detail-tshirt.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
 
-<h2>Reviews</h2>
-<p>Stylish and durable!</p>
-
-<a href="products.html">Back to Products</a>
+<footer>
+  <p>&copy; 2024 Surio Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
