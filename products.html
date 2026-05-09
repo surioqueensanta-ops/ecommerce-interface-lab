@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Products | Surio Store</title>
+  <title>All Products | Wander Store</title>
   <link rel="stylesheet" href="surio.css">
 </head>
 <body>
@@ -18,10 +18,11 @@
   <a href="products.html">Products</a>
   <a href="cart.html">Cart</a>
   <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
 </nav>
 
-<main style="display: flex; flex-wrap: wrap;">
-  <aside style="width: 250px;">
+<main class="products-page">
+  <aside>
     <h3>🔍 Filter Products</h3>
     <form>
       <h4>Category</h4>
@@ -37,10 +38,9 @@
     </form>
   </aside>
 
-  <div style="flex: 1;">
+  <div class="products-container">
     <h1>All Products <span style="font-size: 0.9rem;">(8 items)</span></h1>
     <div class="products-grid">
-      
       <article class="product-card">
         <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/200'">
         <h3>Wireless Mouse</h3>
@@ -109,7 +109,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2024 Surio Store. All rights reserved.</p>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
 </footer>
 
 </body>

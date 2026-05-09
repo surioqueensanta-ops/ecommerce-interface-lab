@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Account | Wander Store</title>
   <link rel="stylesheet" href="surio.css">
+  <style>
+    .account-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 25px 0 30px 0;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 0;
+    }
+    .account-tabs a {
+      text-decoration: none;
+      color: #2c3e50;
+      padding: 10px 20px;
+      transition: 0.3s;
+      border-radius: 8px 8px 0 0;
+    }
+    .account-tabs a:hover {
+      background-color: #e67e22;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      .account-tabs { flex-direction: column; border-bottom: none; }
+      .account-tabs a { border-radius: 8px; text-align: center; }
+    }
+  </style>
 </head>
 <body>
 
@@ -25,12 +50,12 @@
   <h1>My Account</h1>
   <p>Welcome, <strong>Surio</strong></p>
 
-  <nav style="margin-bottom: 20px;">
+  <div class="account-tabs">
     <a href="#">Order History</a>
     <a href="#">Profile Settings</a>
     <a href="#">Wishlist</a>
     <a href="#">Saved Addresses</a>
-  </nav>
+  </div>
 
   <section>
     <h2>📋 Previous Purchases</h2>
@@ -39,10 +64,7 @@
       <li>
         <details>
           <summary>Order #ORD-001 - ₱250 - Dec 15, 2024</summary>
-          <p><strong>Items:</strong></p>
-          <ul>
-            <li>T-Shirt x1 - ₱250</li>
-          </ul>
+          <p><strong>Items:</strong> T-Shirt x1 - ₱250</p>
           <p><strong>Status:</strong> Delivered</p>
           <p><strong>Tracking:</strong> TRK123456789</p>
         </details>
@@ -51,10 +73,7 @@
       <li>
         <details>
           <summary>Order #ORD-002 - ₱779 - Dec 20, 2024</summary>
-          <p><strong>Items:</strong></p>
-          <ul>
-            <li>Watch x1 - ₱779</li>
-          </ul>
+          <p><strong>Items:</strong> Watch x1 - ₱779</p>
           <p><strong>Status:</strong> Shipped</p>
           <p><strong>Tracking:</strong> TRK987654321</p>
         </details>

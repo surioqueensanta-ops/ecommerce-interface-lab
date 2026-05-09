@@ -19,33 +19,33 @@
   <a href="login.html">Login</a>
 </nav>
 
-<main style="max-width: 500px; margin: 40px auto;">
-  <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-    <h1 style="border-bottom: none; display: block; margin-bottom: 8px;">Create Account</h1>
-    <p style="color: #666; margin-bottom: 30px;">Join us for a better shopping experience</p>
+<main class="login-container">
+  <div class="login-card">
+    <h1>Create Account</h1>
+    <p class="login-subtitle">Join us for a better shopping experience</p>
 
-    <form style="background: transparent; padding: 0; margin: 0;">
-      <label>Full Name</label>
-      <input type="text" required placeholder="Chamel" style="margin-bottom: 20px;">
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required placeholder="Chamel">
 
-      <label>Email Address</label>
-      <input type="email" required placeholder="charmeldelaruz@example.com" style="margin-bottom: 20px;">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="charmeldelaruz@example.com">
 
-      <label>Password</label>
-      <input type="password" required minlength="8" placeholder="At least 8 characters" style="margin-bottom: 20px;">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
 
-      <label>Confirm Password</label>
-      <input type="password" required placeholder="" style="margin-bottom: 20px;">
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" required placeholder="">
 
-      <label>Phone Number</label>
-      <input type="tel" placeholder="Optional">
-      <p style="color: #999; font-size: 12px; margin-top: 5px;">We'll only use this for order updates</p>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Optional">
+      <p class="optional-text">We'll only use this for order updates</p>
 
-      <button type="submit" style="width: 100%; margin-top: 20px;">Sign Up</button>
+      <button type="submit" class="login-btn">Sign Up</button>
     </form>
 
-    <p style="text-align: center; margin-top: 25px; font-size: 14px; color: #666;">
-      Already have an account? <a href="login.html" style="color: var(--accent-color);">Login</a>
+    <p class="signup-link">
+      Already have an account? <a href="login.html">Login</a>
     </p>
   </div>
 </main>
